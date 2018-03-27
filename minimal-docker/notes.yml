@@ -1,0 +1,18 @@
+Install nginx on the host:
+    sudo yum install epel-release
+    sudo yum install nginx
+    sudo systemctl start nginx
+    sudo firewall-cmd --permanent --zone=public --add-service=http 
+    sudo firewall-cmd --permanent --zone=public --add-service=https
+    sudo firewall-cmd --reload
+
+http://192.168.33.10/
+
+https://github.com/moby/moby.git
+cd moby/contrib
+sudo ./mkimage-yum.sh centos
+
+docker build -t test-server .
+docker run -d -p 80:80 test-server
+docker ps
+iptables -L

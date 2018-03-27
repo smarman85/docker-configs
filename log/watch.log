@@ -1,0 +1,51 @@
+20180301171102 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171102 :: file:  :: CLOSE_NOWRITE,CLOSE,ISDIR :: /vagrant/delete/
+20180301171113 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171122 :: file: 10.txt :: DELETE :: /vagrant/delete/
+20180301171139 :: file: junk.sh :: CREATE :: /vagrant/delete/
+20180301171147 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171148 :: file: junk.sh :: OPEN :: /vagrant/delete/
+20180301171148 :: file: .junk.sh.swx :: DELETE :: /vagrant/delete/
+20180301171148 :: file: .junk.sh.swp :: MODIFY :: /vagrant/delete/
+20180301171148 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171150 :: file: .junk.sh.swp :: MODIFY :: /vagrant/delete/
+20180301171200 :: file: 4913 :: CREATE :: /vagrant/delete/
+20180301171200 :: file: junk.sh :: MOVED_FROM :: /vagrant/delete/
+20180301171200 :: file: junk.sh :: CLOSE_WRITE,CLOSE :: /vagrant/delete/
+20180301171200 :: file: junk.sh~ :: DELETE :: /vagrant/delete/
+20180301171208 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171209 :: file: junk.sh :: ATTRIB :: /vagrant/delete/
+20180301171215 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301171216 :: file: junk.sh :: OPEN :: /vagrant/delete/
+20180301171216 :: file: junk.sh :: CLOSE_NOWRITE,CLOSE :: /vagrant/delete/
+20180301172205 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172205 :: file:  :: CLOSE_NOWRITE,CLOSE,ISDIR :: /vagrant/delete/
+20180301172211 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172215 :: file: 1.txt :: OPEN :: /vagrant/delete/
+20180301172227 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172229 :: file: 5.txt :: OPEN :: /vagrant/delete/
+20180301172229 :: file: .5.txt.swx :: DELETE :: /vagrant/delete/
+20180301172229 :: file: .5.txt.swp :: MODIFY :: /vagrant/delete/
+20180301172229 :: file:  :: OPEN,ISDIR :: /vagrant/delete/
+20180301172236 :: file: .5.txt.swp :: MODIFY :: /vagrant/delete/
+20180301172242 :: file: 4913 :: CREATE :: /vagrant/delete/
+20180301172242 :: file: 5.txt :: MOVED_FROM :: /vagrant/delete/
+20180301172242 :: file: 5.txt :: CLOSE_WRITE,CLOSE :: /vagrant/delete/
+20180301172242 :: file: 5.txt~ :: DELETE :: /vagrant/delete/
+20180301172243 :: file: 4913 :: CREATE :: /vagrant/delete/
+20180301172243 :: file: 5.txt :: MOVED_FROM :: /vagrant/delete/
+20180301172243 :: file: 5.txt :: ATTRIB :: /vagrant/delete/

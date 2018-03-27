@@ -1,0 +1,2 @@
+$ docker build -t appleboy/go-app .
+$ docker run --rm appleboy/go-app

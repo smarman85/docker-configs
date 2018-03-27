@@ -1,0 +1,52 @@
+docker/
+docker build -t test-server .
+docker run -d -p 80:80 test-server
+docker ps
+docker images
+docker ls
+docker ps
+docker rm jenkins
+docker rm jenkins-master
+docker stop jenkins-master
+docker run -p 8080:8080 --name=jenkins-master -d jenkins
+docker rm jenkins-master
+docker images
+docker run -p 8080:8080 --name=jenkins-master -d jenkins
+docker stop jenkins-master
+docker rm jenkins-master
+docker run -p 8080:8080 --name=jenkins-master -d --env JAVA_OPTS="-Xmx8192m" jenkins
+docker stop jenkins-master
+docker rm jenkins-master
+docker run -p 8080:8080 --name=jenkins-master -d --env JAVA_OPTS="-Xmx8192m -XX:PermSize=256m -XX:MaxPermSize=1024m" jenkins
+docker stop jenkins-master
+docker rm jenkins-master
+docker run -p 8080:8080 --name=jenkins-master -d --env JAVA_OPTS="-Xmx8192m" --env JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300" jenkins
+docker
+docker/
+docker build -t myjenkins .
+docker stop myjenkins
+docker ls
+docker images
+docker ps
+docker run -p 8080:8080 --name=jenkins-master -d --env JAVA_OPTS="-Xmx8192m" --env JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300" myjenkins
+docker rm myjenkins
+docker rmi myjenkins
+docker run -p 8080:8080 --name=jenkins-master -d --env JAVA_OPTS="-Xmx8192m" --env JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300" myjenkins
+docker run -p 8080:8080 --name=jenkins-master -d --env JAVA_OPTS="-Xmx8192m" --env JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300" myjenkins .
+docker build -t myjenkins .
+docker stop jenkins-master
+docker rm jenkins-master
+docker run -p 8080:8080 --name=jenkins-master -d myjenkins
+docker exec jenkins-master ps -ef | grep java
+docker build -t myjenkins .
+docker build -t myjenkins .
+docker build -t myjenkins .
+docker stop jenkins-master
+docker rm jenkins-master
+docker run -p 8080:8080 --name=jenkins-master -d myjenkins
+docker exec jenkins-master tail -f /var/log/jenkins/jenkins.log
+docker 
+docker | awk -F '
+docker | awk -F '
+docker | awk -F '
+docker | awk -F '

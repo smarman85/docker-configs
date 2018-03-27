@@ -1,0 +1,61 @@
+https://docs.docker.com/compose/rails/#connect-the-database
+
+Dockerfile:
+
+FROM ruby:2.3.3
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
+RUN mkdir /myapp
+WORKDIR /myapp
+COPY Gemfile /myapp/Gemfile
+COPY Gemfile.lock /myapp/Gemfile.lock
+RUN bundle install
+COPY . /myapp
+
+docker-compose.yml:
+
+
+version: '3'
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/myapp
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+
+build the project:
+Gemfile:
+source 'https://rubygems.org'
+gem 'rails', '5.0.0.1'
+
+empty Gemfile.lock
+
+$ docker-compose run web rails new . --force --database=postgresql
+$ docker-compose build
+
+Change config/database.yml to :
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password:
+  pool: 5
+
+development:
+  <<: *default
+  database: myapp_development
+
+
+test:
+  <<: *default
+  database: myapp_test
+
+$ docker-compose up

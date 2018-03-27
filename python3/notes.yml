@@ -1,0 +1,17 @@
+$ sudo yum update -y
+$ sudo yum -y install yum-utils
+$ sudo yum -y groupinstall development
+$ sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+$ sudo yum -y install python36u
+$ python3.6 -V
+$ sudo yum -y install python36u-pip
+$ pip3.6 install virtualenv --user
+$ sudo yum -y install python36u-devel
+$ python3.6 -m venv my_env
+$ ls
+$ ls my_env/
+$ source my_env/bin/activate
+$ python -v
+$ python -version
+$ python --version
+$ 

@@ -1,0 +1,24 @@
+   10  sudo yum install epel-release -y
+   11  sudo yum install -y nginx
+   12  sudo systemctl start nginx
+   13  sudo firewall-cmd --permanent --zone=public --add-service=http
+   14  sudo firewall-cmd --permanent --zone=public --add-service=https
+   15  sudo firewall-cmd --reload
+   16  ifconfig
+   17  ip addr
+   18  sudo systemctl enable nginx
+
+sudo yum install -y git
+git clone https://github.com/moby/moby.git
+   30  cd moby/contrib/
+   31  sudo ./mkimage-yum.sh centos
+
+docker build -t test-server .
+docker run -d -p 80:80 test-server
+FAIL:
+[vagrant@centos7lrg base-image ]$ docker run -d -p 81:80 test-server
+30f022760f698e132b2434aef52633fcb948821aa85610d2bb64a5b81d42ba05
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "exec: \"nginx\": executable file not found in $PATH": unknown.
+
+docker ps
+iptables -L
